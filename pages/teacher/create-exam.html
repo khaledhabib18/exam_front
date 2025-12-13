@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Exam | Teacher Dashboard</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/teacher.css">
+    <link rel="stylesheet" href="../../assets/css/create-exam.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1>Create New Exam</h1>
+        </div>
+        <div class="nav-right">
+            <span id="teacherName">Welcome, Teacher</span>
+            <button id="logoutBtn" class="btn btn-outline">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Form Container -->
+    <div class="form-container">
+        <form id="createExamForm">
+            <div class="form-group">
+                <label for="title">Exam Title</label>
+                <input type="text" id="title" placeholder="Enter exam title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Enter exam description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">Duration (minutes)</label>
+                <input type="number" id="duration" placeholder="Enter duration in minutes" required>
+            </div>
+
+            <div class="form-group">
+                <label for="start_time">Start Time</label>
+                <input type="datetime-local" id="start_time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="end_time">End Time</label>
+                <input type="datetime-local" id="end_time" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width">Create Exam</button>
+        </form>
+        <p id="message" style="margin-top:10px; font-weight:500;"></p>
+    </div>
+
+    <script src="../../assets/js/create-exam.js"></script>
+</body>
+
+</html>

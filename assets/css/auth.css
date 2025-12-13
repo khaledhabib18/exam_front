@@ -1,0 +1,132 @@
+/* Auth Container */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Auth Card */
+.auth-card {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Side Image */
+.auth-image {
+    background: linear-gradient(rgba(79, 70, 229, 0.85),
+            rgba(6, 182, 212, 0.85)),
+        url("../images/exam.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-image h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.auth-image p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Right Side Form */
+.auth-form {
+    padding: 50px 40px;
+}
+
+.auth-form h2 {
+    font-size: 26px;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Full width button */
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Switch auth */
+.switch-auth {
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.switch-auth a {
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switch-auth a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .auth-card {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-image {
+        display: none;
+    }
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 14px;
+    margin: 10px 0;
+    height: 10px;
+}

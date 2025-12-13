@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* Body */
+body {
+    background: #f9fafb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #374151;
+}
+
+.navbar nav a:hover {
+    color: #4f46e5;
+}
+
+.nav-btn {
+    padding: 8px 18px;
+    border-radius: 6px;
+    background: #4f46e5;
+    color: #ffffff !important;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Hero Text */
+.hero-text h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    color: #6b7280;
+    margin-bottom: 35px;
+    max-width: 480px;
+}
+
+/* Buttons */
+.hero-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #4338ca;
+}
+
+.btn-secondary {
+    border: 2px solid #4f46e5;
+    color: #4f46e5;
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    display: block;
+    margin-left: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin: 0 auto 30px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        margin: 40px auto 0;
+    }
+}

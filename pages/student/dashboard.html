@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Online Exam System</title>
+    <link rel="icon" type="image/png" href="../../assets/images/icon.png">
+
+    <!-- Global Style -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <!-- Student Style -->
+    <link rel="stylesheet" href="../../assets/css/student.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1>Online Exam System</h1>
+        </div>
+        <div class="nav-right">
+            <span id="studentName">Welcome, Student</span>
+            <button id="logoutBtn" class="btn btn-outline">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <h2>Available Exams</h2>
+        <div class="exam-cards" id="examCards">
+            <!-- Exam cards will be rendered here dynamically -->
+        </div>
+    </div>
+
+    <script src="../../assets/js/student.js"></script>
+</body>
+
+</html>

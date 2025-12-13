@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Exam | Online Exam System</title>
+    <link rel="icon" type="image/png" href="../../assets/images/icon.png">
+
+    <!-- Global Style -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <!-- Exam Style -->
+    <link rel="stylesheet" href="../../assets/css/exam.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="exam-navbar">
+        <div class="nav-left">
+            <h1 id="examTitle">Example Exam</h1>
+        </div>
+        <div class="nav-center">
+            <span>Time Left: <span id="examTimer">30:00</span></span>
+        </div>
+        <div class="nav-right">
+            <button id="logoutBtn" class="btn btn-outline">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Exam Container -->
+    <div class="exam-container">
+        <!-- Question Number -->
+        <p id="questionNumber">Question 1 of 10</p>
+
+        <!-- Question Card -->
+        <div class="question-card">
+            <h3 id="questionText">What color is the sky on a clear day?</h3>
+            <div class="options-container">
+                <button class="option-btn" data-label="A">A. red</button>
+                <button class="option-btn" data-label="B">B. blue</button>
+                <button class="option-btn" data-label="C">C. green</button>
+                <button class="option-btn" data-label="D">D. yellow</button>
+            </div>
+        </div>
+
+        <!-- Question Navigation -->
+        <div class="question-navigation">
+            <button id="prevQuestionBtn" class="nav-arrow">&lt;</button>
+            <button id="nextQuestionBtn" class="nav-arrow">&gt;</button>
+        </div>
+
+        <!-- Exam Actions -->
+        <div class="exam-actions">
+            <button id="submitExamBtn" class="btn btn-success">Submit Exam</button>
+        </div>
+    </div>
+
+    <script src="../../assets/js/exam-start.js"></script>
+</body>
+
+</html>

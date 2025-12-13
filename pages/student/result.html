@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result | Online Exam System</title>
+
+    <!-- Global Style -->
+    <link rel="icon" type="image/png" href="../../assets/images/icon.png">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/result.css"> <!-- reuse exam styles -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1 id="examTitle">Exam Result</h1>
+        </div>
+        <div class="nav-center">
+            <span id="scoreDisplay">Score: 0 / 0</span>
+        </div>
+        <div class="nav-right">
+            <span id="studentName">Welcome, Student</span>
+            <button id="logoutBtn" class="btn btn-outline">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Question Container -->
+    <div class="exam-container">
+        <div id="questionCard" class="question-card">
+            <!-- Question will be displayed here dynamically -->
+        </div>
+
+        <div class="exam-navigation">
+            <button id="prevBtn" class="btn btn-outline">&lt; Previous</button>
+            <button id="nextBtn" class="btn btn-outline">Next &gt;</button>
+        </div>
+
+        <button id="backDashboard" class="btn btn-primary full-width">Back to Dashboard</button>
+    </div>
+
+    <script src="../../assets/js/result.js"></script>
+</body>
+
+</html>

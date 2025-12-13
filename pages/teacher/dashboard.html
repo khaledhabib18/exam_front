@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Dashboard | Online Exam System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <!-- Teacher styles -->
+    <link rel="stylesheet" href="../../assets/css/teacher.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1>Teacher Dashboard</h1>
+        </div>
+        <div class="nav-right">
+            <span>Welcome, Teacher</span>
+            <button id="logoutBtn" class="btn btn-outline">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2>Your Exams</h2>
+            <button class="btn btn-primary" id="createExamBtn">+ Create Exam</button>
+        </div>
+
+        <div class="exam-cards" id="examCards">
+            <!-- Exams will be rendered here -->
+        </div>
+    </div>
+
+    <script src="../../assets/js/teacher.js"></script>
+</body>
+
+</html>
