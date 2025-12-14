@@ -41,7 +41,7 @@ logoutBtn.addEventListener("click", () => {
 // Fetch exam questions from backend
 async function fetchExamQuestions() {
     try {
-        const response = await fetch(`http://localhost:5000/api/v1/questions/question?examId=${examId}`, {
+        const response = await fetch(`https://exam-backend-pi.vercel.app/api/v1/questions/question?examId=${examId}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -165,7 +165,7 @@ submitBtn.addEventListener("click", async () => {
 
     try {
         // 1️⃣ PUT request لتحديث Attempt
-        const attemptResponse = await fetch(`http://localhost:5000/api/v1/attempts/attempt?examId=${examId}`, {
+        const attemptResponse = await fetch(`https://exam-backend-pi.vercel.app/api/v1/attempts/attempt?examId=${examId}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -188,7 +188,7 @@ submitBtn.addEventListener("click", async () => {
             }))
         };
 
-        const answersResponse = await fetch(`http://localhost:5000/api/v1/answers/answer?examId=${examId}`, {
+        const answersResponse = await fetch(`https://exam-backend-pi.vercel.app/api/v1/answers/answer?examId=${examId}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

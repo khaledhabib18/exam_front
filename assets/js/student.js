@@ -32,7 +32,7 @@ async function fetchExams() {
     if (!token || !examCardsContainer) return;
 
     try {
-        const response = await fetch("http://localhost:5000/api/v1/exams/exam", {
+        const response = await fetch("https://exam-backend-pi.vercel.app/api/v1/exams/exam", {
             method: "GET", // Using GET request
             headers: {
                 "Content-Type": "application/json",
@@ -95,7 +95,7 @@ async function startExam(examId) {
     if (!token) return alert("You are not authorized");
 
     try {
-        const response = await fetch(`http://localhost:5000/api/v1/attempts/attempt?examId=${examId}`, {
+        const response = await fetch(`https://exam-backend-pi.vercel.app/api/v1/attempts/attempt?examId=${examId}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

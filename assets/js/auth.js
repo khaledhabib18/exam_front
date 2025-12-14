@@ -17,7 +17,7 @@ if (loginForm) {
         }
 
         try {
-            const response = await fetch("http://localhost:5000/api/v1/login", {
+            const response = await fetch("https://exam-backend-pi.vercel.app/api/v1/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -76,7 +76,7 @@ if (signupForm) {
         }
 
         try {
-            const response = await fetch("http://localhost:5000/api/v1/signup", {
+            const response = await fetch("https://exam-backend-pi.vercel.app/api/v1/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

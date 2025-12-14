@@ -30,7 +30,7 @@ function renderGrades(grades) {
 // Fetch grades from backend
 async function fetchGrades() {
     try {
-        const response = await fetch(`http://localhost:5000/api/v1/answers/student-results?examId=${examId}`, {
+        const response = await fetch(`https://exam-backend-pi.vercel.app/api/v1/answers/student-results?examId=${examId}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

@@ -29,7 +29,7 @@ createExamBtn.addEventListener("click", () => {
 // Fetch exams from backend
 async function fetchExams() {
     try {
-        const response = await fetch("http://localhost:5000/api/v1/exams/exam", {
+        const response = await fetch("https://exam-backend-pi.vercel.app/api/v1/exams/exam", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -92,7 +92,7 @@ function renderExams(exams) {
             if (!confirm(`Are you sure you want to delete "${exam.title}"?`)) return;
 
             try {
-                const response = await fetch(`http://localhost:5000/api/v1/exams/exam?id=${exam.id}`, {
+                const response = await fetch(`https://exam-backend-pi.vercel.app/api/v1/exams/exam?id=${exam.id}`, {
                     method: "DELETE",
                     headers: {
                         "Content-Type": "application/json",

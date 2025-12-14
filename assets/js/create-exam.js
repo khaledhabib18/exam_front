@@ -27,7 +27,7 @@ createExamForm.addEventListener("submit", async (e) => {
     }
 
     try {
-        const response = await fetch("http://localhost:5000/api/v1/exams/exam", {
+        const response = await fetch("https://exam-backend-pi.vercel.app/api/v1/exams/exam", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

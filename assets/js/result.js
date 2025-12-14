@@ -44,7 +44,7 @@ async function fetchResults() {
 
     try {
         const response = await fetch(
-            `http://localhost:5000/api/v1/answers/results?attemptId=${attemptId}`,
+            `https://exam-backend-pi.vercel.app/api/v1/answers/results?attemptId=${attemptId}`,
             {
                 method: "GET",
                 headers: {
