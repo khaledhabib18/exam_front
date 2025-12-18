@@ -17,8 +17,10 @@ createExamForm.addEventListener("submit", async (e) => {
     const title = document.getElementById("title").value.trim();
     const description = document.getElementById("description").value.trim();
     const duration = document.getElementById("duration").value.trim();
-    const start_time = document.getElementById("start_time").value;
-    const end_time = document.getElementById("end_time").value;
+    let start_time = document.getElementById("start_time").value;
+    start_time = new Date(start_time).getTime();
+    let end_time = document.getElementById("end_time").value;
+    end_time = new Date(end_time).getTime();
 
     if (!title || !description || !duration || !start_time || !end_time) {
         messageBox.textContent = "Please fill all fields";
